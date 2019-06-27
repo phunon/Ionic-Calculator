@@ -1,2 +1,8 @@
 ======= Create new project =======
 ionic start myCalculator blank
+======= Instruction ========
+cd myCalculator
+find: src/app/home
+======= Run live ======
+ionic serve -l
+ask: to install @ionic/lab ans:y 

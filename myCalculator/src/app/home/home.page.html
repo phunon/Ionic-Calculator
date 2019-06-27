@@ -1,14 +1,53 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+    <ion-toolbar>
+      <div class="input">
+        <span>
+          <ion-input type="text" placeholder="0" name="display" [(ngModel)]="calculate"></ion-input>
+          <ion-input id="result" type="text"name="result" [(ngModel)]="result" disabled></ion-input>
+        </span>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="keys">
+      <div class="row">
+        <div class="symbol"><span (click)="btnClicked('C')">C</span></div>
+        <div class="symbol"><span (click)="btnClicked('/')">÷</span></div>
+        <div class="symbol"><span (click)="btnClicked('*')">×</span></div>
+        <div class="symbol"><span (click)="btnClicked('backspace')"><ion-icon name="backspace"></ion-icon></span></div>
+      </div>
+      <div class="row">
+        <div class="number">
+          <span (click)="btnClicked('7')">7</span>
+          <span (click)="btnClicked('8')">8</span>
+          <span (click)="btnClicked('9')">9</span>
+        </div>
+        <div class="symbol"><span (click)="btnClicked('-')">-</span></div>
+      </div>
+      <div class="row">
+        <div class="number">
+          <span (click)="btnClicked('4')">4</span>
+          <span (click)="btnClicked('5')">5</span>
+          <span (click)="btnClicked('6')">6</span>
+        </div>
+        <div class="symbol"><span (click)="btnClicked('+')">+</span></div>
+      </div>
+      <div class="row">
+        <div class="number">
+          <span (click)="btnClicked('1')">1</span>
+          <span (click)="btnClicked('2')">2</span>
+          <span (click)="btnClicked('3')">3</span>
+        </div>
+        <div class="symbol action"><span (click)="btnClicked('=')"></span></div>
+      </div>
+      <div class="row">
+        <div class="number">
+          <span (click)="btnClicked('%')">%</span>
+          <span (click)="btnClicked('0')">0</span>
+          <span (click)="btnClicked('.')">.</span>
+        </div>
+        <div class="symbol action"><span (click)="btnClicked('=')">=</span></div>
+      </div>
+    </div>
+  </ion-content>

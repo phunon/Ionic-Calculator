@@ -41,7 +41,5 @@ export class HomePage {
       this.calculate = ("Error");
       console.log(e);
     }
-    
   }
-
 }

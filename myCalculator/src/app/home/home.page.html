@@ -1,15 +1,17 @@
 <ion-header>
-    <ion-toolbar>
-      <div class="input">
-        <span>
-          <ion-input type="text" placeholder="0" name="display" [(ngModel)]="calculate"></ion-input>
-          <ion-input id="result" type="text"name="result" [(ngModel)]="result" disabled></ion-input>
-        </span>
-      </div>
-    </ion-toolbar>
+  <ion-toolbar>
+    <div class="input">
+      <span>
+        <ion-input type="text" placeholder="0" name="display" [(ngModel)]="calculate"></ion-input>
+        <ion-input id="result" type="text"name="result" [(ngModel)]="result" disabled="disabled"></ion-input>
+      </span>
+    </div>
+  </ion-toolbar>
   </ion-header>
-  
-  <ion-content>
+
+<ion-content> 
+    
+
     <div class="keys">
       <div class="row">
         <div class="symbol"><span (click)="btnClicked('C')">C</span></div>
@@ -39,11 +41,11 @@
           <span (click)="btnClicked('2')">2</span>
           <span (click)="btnClicked('3')">3</span>
         </div>
-        <div class="symbol action"><span (click)="btnClicked('=')"></span></div>
+        <div class="symbol2"><span (click)="btnClicked('percent')">%</span></div>
       </div>
       <div class="row">
         <div class="number">
-          <span (click)="btnClicked('%')">%</span>
+          <span (click)="btnClicked('negate')">+/-</span>
           <span (click)="btnClicked('0')">0</span>
           <span (click)="btnClicked('.')">.</span>
         </div>

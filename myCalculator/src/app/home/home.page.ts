@@ -13,17 +13,17 @@ export class HomePage {
   constructor() {}
 
   btnClicked(btn) {
-    console.log('CalculatorPage::btnClicked = ' + btn + " result: " + this.result );
+    console.log('btnClicked: ' + btn + " result: " + this.result );
     var lastResult = "";
     try {
       if (btn == "C") {
         this.calculate = "";
       } else if (btn == "=") {  
-        this.calculate = eval(this.result);
+        this.calculate = eval(this.calculate);
       } else if (btn == "%") {
-        this.calculate = eval(this.result+"/"+100);
+        this.calculate = eval(this.calculate+"/"+100);
       } else if (btn == "backspace") {
-        this.calculate = eval(this.result.substr(0, this.result.length - 1));
+        this.calculate = this.calculate.substr(0, this.calculate.length - 1);
       } else {
         this.calculate += btn;
       }

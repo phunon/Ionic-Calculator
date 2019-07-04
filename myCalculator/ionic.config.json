@@ -1,5 +1,7 @@
 {
   "name": "myCalculator",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

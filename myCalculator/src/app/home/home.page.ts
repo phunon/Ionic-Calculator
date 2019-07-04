@@ -22,8 +22,6 @@ export class HomePage {
         this.calculate = eval(this.calculate);
       } else if (btn == "%") {
         this.calculate = eval(this.calculate+"/"+100);
-      } else if (btn === 'percent') { // %
-        this.calculate = eval((this.calculate) + '/100') ;
       } else if (btn == "backspace") {
         this.calculate = this.calculate.substr(0, this.calculate.length - 1);
       } else if (btn == "negate") {

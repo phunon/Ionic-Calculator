@@ -7,8 +7,7 @@
       </span>
     </div>
   </ion-toolbar>
-  </ion-header>
-
+</ion-header>
 <ion-content> 
   <div class="keys">
     <div class="row">
@@ -18,35 +17,27 @@
       <div class="symbol"><span (click)="btnClicked('backspace')"><ion-icon name="backspace"></ion-icon></span></div>
     </div>
     <div class="row">
-      <div class="number">
-        <span (click)="btnClicked('7')">7</span>
-        <span (click)="btnClicked('8')">8</span>
-        <span (click)="btnClicked('9')">9</span>
-      </div>
+        <div class="number"><span (click)="btnClicked('7')">7</span></div>
+        <div class="number"><span (click)="btnClicked('8')">8</span></div>
+        <div class="number"><span (click)="btnClicked('9')">9</span></div>
       <div class="symbol"><span (click)="btnClicked('-')">-</span></div>
     </div>
     <div class="row">
-      <div class="number">
-        <span (click)="btnClicked('4')">4</span>
-        <span (click)="btnClicked('5')">5</span>
-        <span (click)="btnClicked('6')">6</span>
-      </div>
+      <div class="number"><span (click)="btnClicked('4')">4</span></div>
+      <div class="number"><span (click)="btnClicked('5')">5</span></div>
+      <div class="number"><span (click)="btnClicked('6')">6</span></div>
       <div class="symbol"><span (click)="btnClicked('+')">+</span></div>
     </div>
     <div class="row">
-      <div class="number">
-        <span (click)="btnClicked('1')">1</span>
-        <span (click)="btnClicked('2')">2</span>
-        <span (click)="btnClicked('3')">3</span>
-      </div>
-      <div class="symbol2"><span (click)="btnClicked('percent')">%</span></div>
+      <div class="number"><span (click)="btnClicked('1')">1</span></div>
+      <div class="number"><span (click)="btnClicked('2')">2</span></div>
+      <div class="number"><span (click)="btnClicked('3')">3</span></div>
+      <div class="symbol2"><span (click)="btnClicked('%')">%</span></div>
     </div>
     <div class="row">
-      <div class="number">
-        <span (click)="btnClicked('negate')">+/-</span>
-        <span (click)="btnClicked('0')">0</span>
-        <span (click)="btnClicked('.')">.</span>
-      </div>
+      <div class="number"><span (click)="btnClicked('negate')">+/-</span></div>
+      <div class="number"><span (click)="btnClicked('0')">0</span></div>
+      <div class="number"><span (click)="btnClicked('.')">.</span></div>
       <div class="symbol action"><span (click)="btnClicked('=')">=</span></div>
     </div>
   </div>
